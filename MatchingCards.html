@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale='1.0', maximum-scale='1.0'">
+<link rel='stylesheet' type='text/css' href='MatchingCards.css'>
+</head>
+<body>
+
+<div id='options'> 
+    <b><h1> Menu </h1></b>
+    <div id='tableContainer'>
+    <table>
+        <u><th>Difficulty:</th></u>
+        <tr>
+            <td id='_easy'>Easy</td>
+        </tr>
+        <tr>
+            <td id='_medium'>Medium</td>
+        </tr>
+        <tr>
+            <td id='_hard'>Hard</td> 
+        </tr>
+    </table>
+        <div id='doneContainer'>
+            <button hidden='hidden' class='doneClass' id='done' onclick='done()'>Done</button>
+        </div>
+    </div>
+</div>
+    
+<div id='_difficulty'></div>
+
+<div hidden='hidden' id='buttons'>
+<button onclick='onclickFunc(btn1, randomNum1)' id='b1' class='card'>1</button>
+<button onclick='onclickFunc(btn2, randomNum2)' id='b2' class='card'>1</button>
+<button onclick='onclickFunc(btn3, randomNum3)' id='b3' class='card'>1</button>
+<button onclick='onclickFunc(btn4, randomNum4)' id='b4' class='card'>1</button>
+<button onclick='onclickFunc(btn5, randomNum5)' id='b5' class='card'>1</button>
+<button onclick='onclickFunc(btn6, randomNum6)' id='b6' class='card'>1</button>
+<button onclick='onclickFunc(btn7, randomNum7)' id='b7' class='card'>1</button>
+<button onclick='onclickFunc(btn8, randomNum8)' id='b8' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn9, randomNum9)' id='b9' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn10, randomNum10)' id='b10' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn11, randomNum11)' id='b11' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn12, randomNum12)' id='b12' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn13, randomNum13)' id='b13' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn14, randomNum14)' id='b14' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn15, randomNum15)' id='b15' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn16, randomNum16)' id='b16' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn17, randomNum17)' id='b17' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn18, randomNum18)' id='b18' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn19, randomNum19)' id='b19' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn20, randomNum20)' id='b20' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn21, randomNum21)' id='b21' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn22, randomNum22)' id='b22' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn23, randomNum23)' id='b23' class='card'>1</button>
+<button hidden='hidden' onclick='onclickFunc(btn24, randomNum24)' id='b24' class='card'>1</button>
+<p id='par1' class='big'> </p></u>
+</div>
+ 
+<div hidden='hidden' id='endScreen'>
+<b><u><p id='par2'></p></u></b>
+<p id='par3'></p>
+<p id='par4'></p>
+<button id='tryAgainId' class='tryAgain' onclick="tryAgain()">Try Again</button>
+</div>
+
+<script src='options.js'></script>
+<script src='MatchingCards.js'></script>
+</body>

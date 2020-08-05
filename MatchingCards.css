@@ -1,0 +1,128 @@
+
+.card{
+    height: 27vw;
+    width: 22vw;
+    border: 1vw solid black;
+    margin: 0.2vw;
+    margin-top: 1vw;
+    background-color: rgb(33, 90, 109);
+    transition: 0.3s;
+    color: rgb(33, 90, 109);
+    font-size: 13vw;
+} 
+
+.open{
+    height: 27vw;
+    width: 22vw;
+    background-color: black;
+    margin: 0.2vw;
+    font-size: 13vw;
+    color: white;
+    pointer-events: none;
+}
+
+.matched{
+    height: 27vw;
+    width: 22vw;
+    background-color: #196e35;
+    margin: 0.2vw;
+    font-size: 13vw;
+    color: white;
+    pointer-events: none;
+}
+
+p{
+    font-size: 12vw;
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+
+.tryAgain{
+    width: 45vw;
+    height: 15vw;
+    background-color: #196e35;
+    color: white;
+    font-size: 8vw;  
+    text-align: center;
+}
+
+
+.allMatched{
+    height: 250px;
+    width: 220px;
+    background-color: #196e35;
+    margin: 2px;
+    font-size: 150px;
+    color: white;
+    pointer-events: none;
+    border: 5px solid white
+}
+
+#tryAgainContainer{
+    text-align: center;
+}
+
+.big{
+    font-size: 13vw;
+}
+
+#buttons{
+    text-align: center;
+
+}
+
+#endScreen{
+    text-align: center;
+}
+
+body{
+    background-color: #92C7A3;
+}
+
+h1{
+    font-size: 16vw;
+    text-align:center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black 
+}
+
+
+table{
+    font-size: 9vw;
+    padding: 5vw;
+    margin: auto;
+    text-align: center;
+}
+
+td{
+    padding: 3vw;
+}
+
+.selected{
+    border: 5px solid black;
+    border-radius: 6vw;
+    background-color: #196e35;
+    color: white;
+}
+
+.doneClass{
+    border: 5px solid black;
+    border-radius: 6vw;
+    background-color:  rgb(33, 90, 109);;
+    color: white;
+    width: 40vw;
+    height: 20vw;
+    font-size: 9vw
+}
+
+#doneContainer{
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
