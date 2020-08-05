@@ -211,7 +211,7 @@ function onclickFunc(btn, randomNum){
 
 
 function reveal(btn, randomNum){
-    if(checkNumArr.length > 2){ 
+    if(checkNumArr.length < 2){ 
     btn.className = 'open'
     btn.innerHTML = randomNum
     checkBtnArr.push(btn)
