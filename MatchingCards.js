@@ -266,3 +266,11 @@ function timer(){
     }
 }
 const time = setInterval(timer, 1000)
+
+if(checkNumArr.length > 2 || buttonArr.length > 2){
+    for (i=0; i<checkNumArr.length; i++){
+        checkNumArr[i].className = 'card'
+        checkBtnArr[i].disabled = 'false'
+        buttonArr.push(checkBtnArr[i])
+    }
+}
