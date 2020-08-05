@@ -211,10 +211,11 @@ function onclickFunc(btn, randomNum){
 
 
 function reveal(btn, randomNum){
+    if(checkNumArr.length > 2){ 
     btn.className = 'open'
     btn.innerHTML = randomNum
     checkBtnArr.push(btn)
-
+    }
 }
 
 function flipped(){
@@ -246,13 +247,11 @@ function match() {
     for(i=0; i<buttonArr.length; i++){
         buttonArr[i].disabled = false;
     }
-    maxCards()
     checkBtnArr = []
     checkNumArr = []
 }
 
 function unmatch(){
-    maxCards()
         checkBtnArr = []
         checkNumArr = []
         setTimeout(function(){
@@ -270,11 +269,5 @@ function timer(){
 const time = setInterval(timer, 1000)
 
 function maxCards(){ 
-if(checkNumArr.length > 2 || buttonArr.length > 2){
-    for (i=0; i<checkNumArr.length; i++){
-        checkNumArr[i].className = 'card'
-        checkBtnArr[i].disabled = 'false'
-        buttonArr.push(checkBtnArr[i])
-        }
-    }
+
 }
