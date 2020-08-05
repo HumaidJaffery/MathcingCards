@@ -35,6 +35,7 @@ var numbers = ['1', '2', '3', '4','1', '2', '3', '4',]
 var buttonArr = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8]
 var hardBtnArr = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15, btn16, btn17, btn18, btn19, btn20, btn21, btn22, btn23, btn24]
 var mediumBtnArr = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15, btn16]
+var pressed = false
 var randomNum1;
 var randomNum2;
 var randomNum3;
@@ -177,6 +178,7 @@ if(difficulty.className == 'medium'){
 
     options.hidden = 'hidden'
     button.hidden = ''
+    pressed = true
     
 
 }
@@ -249,8 +251,8 @@ function match() {
 }
 
 function unmatch(){
-    checkBtnArr = []
-    checkNumArr = []
+        checkBtnArr = []
+        checkNumArr = []
         setTimeout(function(){
         for(i=0; i<buttonArr.length; i++){
             buttonArr[i].className = 'card';
@@ -258,9 +260,9 @@ function unmatch(){
 }
 
 function timer(){
-    if(button.hidden = ''){
+    if(pressed == true){
     sec++
-    document.getElementById('par1').innerHTML = sec 
-    } 
+    document.getElementById('par1').innerHTML = sec  
+    }
 }
-const time = setInterval(timer, 1000);
+const time = setInterval(timer, 1000)
