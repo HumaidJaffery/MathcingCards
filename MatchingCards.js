@@ -189,11 +189,12 @@ function removeNum(Num){
 
 
 function check(){
-    if(checkNumArr[0] == checkNumArr[1]){
+    if(checkBtnArr[0] != checkBtnArr[1] && checkNumArr[0] == checkNumArr[1]){
         match()
     } else {
         unmatch()
     }
+
 }
 
 function tryAgain(){
@@ -267,7 +268,3 @@ function timer(){
     }
 }
 const time = setInterval(timer, 1000)
-
-function maxCards(){ 
-
-}
